@@ -6,12 +6,12 @@ let nomeprato;
 let nomebebida;
 let nomesobremesa;
 
-function ativarBotaoFinalizar(){
-    const botao = document.querySelector('.selecionar');
+const ativarBotaoFinalizar = () => {
+    const botao = document.getElementById('botao-finalizar');
     if (botao !== null){
         if (comida != 0 && bebida != 0 && sobremesa != 0){
-            botao.classList.add('finalizar');
-            botao.classList.remove('selecionar');
+            botao.classList.add('bottom-bar-texto-habilitado');
+            botao.classList.remove('bottom-bar-texto-desabilitado');
             botao.innerHTML = 'Fechar pedido';
         }
     }
@@ -45,7 +45,7 @@ const escolherBebida = (option) => {
     bebida = parseFloat(document.querySelector(`#${option} span`).innerHTML.slice(2))
 
     let listdrink = document.querySelectorAll(".drink .option");
-    let listcheck = document.querySelectorAll(".food .option .check")
+    let listcheck = document.querySelectorAll(".drink .option .check")
 
     for(let i = 0; i < listdrink.length; i++){
         listdrink[i].classList.remove("choiced")
@@ -55,8 +55,8 @@ const escolherBebida = (option) => {
         listcheck[i].classList.add("escondido")
     }
 
-    const optPrato = document.getElementById(option)
-    optPrato.classList.add("choiced")
+    const optdrink = document.getElementById(option)
+    optdrink.classList.add("choiced")
     const check = document.querySelector(`#${option} .check`)
     check.classList.remove("escondido")
     ativarBotaoFinalizar()
@@ -67,7 +67,7 @@ const escolherSobremesa = (option) => {
     sobremesa = parseFloat(document.querySelector(`#${option} span`).innerHTML.slice(2))
     
     let listdessert = document.querySelectorAll(".dessert .option");
-    let listcheck = document.querySelectorAll(".food .option .check")
+    let listcheck = document.querySelectorAll(".dessert .option .check")
 
     for(let i = 0; i < listdessert.length; i++){
         listdessert[i].classList.remove("choiced")
@@ -78,8 +78,8 @@ const escolherSobremesa = (option) => {
         listcheck[i].classList.add("escondido")
     }
 
-    const optPrato = document.getElementById(option)
-    optPrato.classList.add("choiced")
+    const optdessert = document.getElementById(option)
+    optdessert.classList.add("choiced")
     const check = document.querySelector(`#${option} .check`)
     check.classList.remove("escondido")
     ativarBotaoFinalizar()
