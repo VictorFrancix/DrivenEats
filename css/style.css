@@ -1,13 +1,16 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: #e5e5e5;
-
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
+
 header{
     width: 100%;
     height: 92px;
     display: flex;
     position: fixed;
+    z-index: 2;
     flex-direction: column;
     top: 0;
     left: 0;
@@ -76,6 +79,71 @@ section {
 }
 
 
+.janela{
+    z-index: 3000;
+    background-color: #50D074;
+    border-radius: 9px;
+    position: absolute;
+    left: 6px;
+    top: calc(50% - 353px/2 - 0.5px);
+    color: #FFFFFF;
+    padding: 21px 24px;
+    width: 377px;
+    max-width: 90vw;
+    height: 353px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.janela .titulo{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 28px;
+}
+
+.escolha{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.total{
+    font-weight: 700;
+    width: 100%;
+}
+
+.preco-total{
+    width: 121px;
+}
+
+.pedir{
+    background-color: #FFFFFF;
+    color: #50D074;
+    height: 52px;
+    width: 329px;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    border: none;
+    border-radius: 100px;
+    padding: 0px;
+}
+
+.cancelar{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
 .option {
     width: 172px;
     height: 216px;
@@ -127,6 +195,7 @@ footer {
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 3;
     bottom: 0;
     left: 0;
 }
@@ -171,4 +240,8 @@ footer button {
 }
 .options::-webkit-scrollbar-thumb {
     background-color: none; /* color of the scroll thumb */
+}
+
+.option:hover, button:hover, .cancelar{
+    cursor: pointer;
 }
