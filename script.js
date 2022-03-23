@@ -141,7 +141,7 @@ function enviarPedido(){
         let endereco = prompt('Qual seu endereço?');
         console.log(nome)
         let mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${nomeprato}\n- Bebida: ${nomebebida}\n- Sobremesa: ${nomesobremesa}\nTotal: R$ ${total}\n\nNome: ${nome}\nEndereço: ${endereco}`;
-        while (nome === "" || endereco=== ""){
+        while (nome === "" || nome === null || endereco=== "" || endereco === null){
             alert("Não foi possível finalizar seu pedido, insira nome e endereços válidos")
             nome = prompt('Qual seu nome?');
             endereco = prompt('Qual seu endereço?');
