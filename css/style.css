@@ -16,8 +16,8 @@ header{
     left: 0;
     background: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.title_header{
+    }
+    .title_header{
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 44px;
@@ -26,15 +26,15 @@ header{
     letter-spacing: -0.012em;
     margin-left: 21px;
 
-}
-.subtitle_header{
+    }
+    .subtitle_header{
     font-weight: 400;
     font-size: 18px;
     color:#FFFFFF;
     line-height: 21px;
     margin-left:21px
-}
-main {
+    }
+    main {
     width: 100%;
     height: calc(100vh - 184px);
     display: flex;
@@ -42,44 +42,45 @@ main {
     overflow-x: hidden;
     padding-left: 19px;
     margin-top: 92px;
-    margin-bottom: 92px;
-}
+    margin-bottom: 108px;
+    }
 
-section {
+    section {
     margin-top: 27px;
-}
+    }
 
-.options-title {
+    .options-title {
     font-family: "Righteous", cursive;
     font-size: 26px;
     line-height: 32px;
     color: #333333;
-}
+    }
 
-.options {
+    .options {
     width: auto;
     display: flex;
     overflow-x: scroll;
     margin-top: 17px;
-}
-.choiced {
+    margin-bottom: 40px;
+    }
+    .choiced {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F !important;
-}
-.check {
+    }
+    .check {
     display: flex;
     font-size: 20px;
     color: #32b72f;
     position: absolute;
     right: 10px;
     bottom: 10px;
-}
+    }
 
-.escondido{
+    .escondido{
     display: none;
-}
+    }
 
 
-.janela{
+    .janela{
     z-index: 3000;
     background-color: #50D074;
     border-radius: 9px;
@@ -96,34 +97,34 @@ section {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
-}
+    }
 
-.janela .titulo{
+    .janela .titulo{
     color: #FFFFFF;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
     margin-bottom: 28px;
-}
+    }
 
-.escolha{
+    .escolha{
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 22px;
     line-height: 26px;
-}
+    }
 
-.total{
+    .total{
     font-weight: 700;
     width: 100%;
-}
+    }
 
-.preco-total{
+    .preco-total{
     width: 121px;
-}
+    }
 
-.pedir{
+    .pedir{
     background-color: #FFFFFF;
     color: #50D074;
     height: 52px;
@@ -135,16 +136,16 @@ section {
     border: none;
     border-radius: 100px;
     padding: 0px;
-}
+    }
 
-.cancelar{
+    .cancelar{
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-}
+    }
 
 
-.option {
+    .option {
     width: 172px;
     height: 216px;
     display: flex;
@@ -157,37 +158,37 @@ section {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0 0 0 5px #FFFFFF;
     background-color: #FFFFFF;
     margin-right: 16px;
-}
+    }
 
-.option img {
+    .option img {
     width: 144px;
     height: 87px;
     border-radius: 4px;
     margin: 0 auto
-}
+    }
 
-.option h4 {
+    .option h4 {
     font-size: 16px;
     line-height: 19px;
     font-weight: 700;
     color: #333333;
-}
+    }
 
-.option p{
+    .option p{
     font-size: 15px;
     line-height: 18px;
     font-weight: 300;
     color: #a6a6a6;
-}
+    }
 
-span {
+    span {
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
     color: #000000;
-}
+    }
 
-footer {
+    footer {
     background-color: #ffffff;
     width: 100%;
     height: 92px;
@@ -198,9 +199,9 @@ footer {
     z-index: 3;
     bottom: 0;
     left: 0;
-}
+    }
 
-footer button {
+    footer button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,38 +211,38 @@ footer button {
     border: none;
     border-radius: 50px;
     padding: 8px 60px;
-}
-.bottom-bar-texto-desabilitado {
+    }
+    .bottom-bar-texto-desabilitado {
     font-size: 20px;
     line-height: 23px;
     font-weight: 400;
     color: #ffffff;
-}
+    }
 
-.bottom-bar-texto-habilitado {
+    .bottom-bar-texto-habilitado {
     font-size: 20px;
     line-height: 23px;
     font-weight: 700;
     color: #ffffff;
     background-color: #32B72F;
-}
+    }
 
-.margin {
+    .margin {
     margin-bottom: 16px;
-}
+    }
 
-/* TIRAR SCROLLBAR */
-.options::-webkit-scrollbar {
+    /* TIRAR SCROLLBAR */
+    .options::-webkit-scrollbar {
     width: 12px; /* width of the entire scrollbar */
-}
+    }
 
-.options::-webkit-scrollbar-track {
+    .options::-webkit-scrollbar-track {
     background: none; /* color of the tracking area */
-}
-.options::-webkit-scrollbar-thumb {
+    }
+    .options::-webkit-scrollbar-thumb {
     background-color: none; /* color of the scroll thumb */
-}
+    }
 
-.option:hover, button:hover, .cancelar{
+    .option:hover, button:hover, .cancelar{
     cursor: pointer;
-}
+  }
